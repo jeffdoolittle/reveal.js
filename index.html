@@ -23,12 +23,22 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+            <img src="./doolittle-fall18-19_square_reduced.jpg" style="border: 0px;" width="400" />
+
+            <p>Jeff Doolittle</p>
+            <small>jeff@jeffdoolittle.com</small>
+
+        </section>
+        <section>
+          <section>Vertical Slide 1</section>
+          <section>Vertical Slide 2</section>
+        </section>
+        <section>Horizontal Slide 2</section>
+      </div>
+    </div>
 
 		<script src="js/reveal.js"></script>
 
@@ -37,6 +47,26 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+        overview: true,
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 2000,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'zoom', // none/fade/slide/convex/concave/zoom
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
